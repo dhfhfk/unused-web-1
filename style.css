@@ -83,7 +83,7 @@ html {
 	display: block;
 	color: var(--text);
 	text-align: center;
-	padding: 14px 16px;
+	padding: 14px 15px;
 	text-decoration: none;
 	font-size: 17px;
 }
@@ -193,8 +193,8 @@ img {
 }
 
 .component {
-	margin: 0 0 2rem 1vw;
     margin-left: 0vw;
+	flex: 30%
 }
 
 .component .description {
@@ -202,10 +202,10 @@ img {
 	padding: 0.6rem 1rem 1rem 1rem;
 	background-color: var(--compobackground);
 	border-radius: 10px;
-	max-width: 380px;
 	min-height: 140px;
-	min-width:380px;
-	margin: 0 0 2rem 0;
+	min-width:200px;
+	width: 100%;
+	margin: 0 10px 10px 10px;
 }
 
 .description h3 {
@@ -299,7 +299,7 @@ hr {
 	margin: 0 0 3rem 0;
 }
 
-li {
+.notice li {
 	line-height: 160%;
 	margin-left: 18px;
 }
@@ -401,9 +401,18 @@ button#btn3:hover {
 	}
 }
 
-@media (max-width: 988px) {
-	.container {
-		max-width: 100%;
+
+@media (max-width: 1198px) {
+	.component {
+		min-width:345px;
+		max-width: 100vw;
 	}
 }
+
+@media (max-width: 356px) {
+	.topnav a {
+		padding: 14px 8px 14px 8px;
+	}
+}
+
 */
