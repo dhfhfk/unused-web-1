@@ -14,6 +14,7 @@ html.light {
 	--emphatext: #1a1a1a;
 	--bgtext: #ececec;
 	--compobackground: #e8e8e8;
+	--footercolor: #e8e8e8;
 	--topnavbackground: #e2e2e2;
 	--topnavhover: #cecece;
 	--hrcolor: #4b4b4b;
@@ -30,6 +31,7 @@ html {
 	--emphatext: #f1f1f1;
 	--bgtext: #f1f1f1;
 	--compobackground: #252526;
+	--footercolor: #252526;
 	--topnavbackground: #333333;
 	--topnavhover: #222222;
 	--hrcolor: #4b4b4b;
@@ -136,7 +138,7 @@ body {
 	justify-content: center;
 	text-align: center;
 	height: 50px;
-	width: 80px;
+	width: 50px;
 	margin: 0 auto;
 	display: block;
 	background: transparent;
@@ -181,7 +183,7 @@ h2 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 0 10px 0 10px;
+	margin-bottom: 48px;
 }
 
 .main-content h2 {
@@ -193,7 +195,7 @@ img {
 }
 
 .component {
-    margin-left: 0vw;
+	margin: 0 5px 10px 5px;
 	flex: 30%
 }
 
@@ -204,8 +206,12 @@ img {
 	border-radius: 10px;
 	min-height: 140px;
 	min-width:200px;
+}
+
+.status-wrapper {
+	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
-	margin: 0 10px 10px 10px;
 }
 
 .description h3 {
@@ -219,7 +225,7 @@ img {
 .description h4 {
 	text-align: left;
 	float: left;
-	margin-bottom: 6px;
+	width: 100%;
 	color: var(--emphatext);
 }
 
@@ -268,10 +274,10 @@ img {
 }
 
 div#adress {
-	text-align: right;
 	border-bottom: 2px solid var(--hrcolor);
-	padding-bottom: 8px;
-	margin-bottom: 10px;
+	text-align: left;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
 
 }
 
@@ -282,6 +288,8 @@ hr {
 }
 
 .notices {
+	margin-bottom: 48px;
+	line-height: 160%;
 	width: 100%;
 }
 
@@ -296,10 +304,12 @@ hr {
 
 
 .new {
+	line-height: 160%;
 	margin: 0 0 3rem 0;
 }
 
-.notice li {
+.todo li {
+	text-align: left;
 	line-height: 160%;
 	margin-left: 18px;
 }
@@ -314,7 +324,29 @@ hr {
 }
 
 .plugins li {
-	line-height: 180%
+	text-align: left;
+	line-height: 160%;
+	margin-left: 18px;
+}
+
+.recommend {
+	margin-bottom: 48px;
+}
+
+
+.recommend h4 {
+	line-height: 140%;
+}
+
+.recommend li {
+	text-align: left;
+	line-height: 160%;
+	margin-left: 18px;
+}
+
+.btns {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .gobtn {
@@ -322,7 +354,7 @@ hr {
 	margin: 0 0 3rem 0;
 }
 
-button#btn1 {
+button#btn {
 	background: transparent;
 	border: 1px solid var(--border);
 	border-radius: 4px;
@@ -332,36 +364,11 @@ button#btn1 {
 	cursor: pointer;
 	min-width: 150px;
 	color: var(--emphatext);
-	margin-bottom: 4px;
+	margin-bottom: 10px;
+	width: 100%
 }
 
-button#btn2 {
-	background: transparent;
-	border: 1px solid var(--border);
-	border-radius: 4px;
-	padding: 16px;
-	font-size: 15px;
-	width: 20%;
-	cursor: pointer;
-	min-width: 150px;
-	color: var(--emphatext);
-	margin-bottom: 4px;
-}
-
-button#btn3 {
-	background: transparent;
-	border: 1px solid var(--border);
-	border-radius: 4px;
-	padding: 16px;
-	font-size: 15px;
-	width: 20%;
-	cursor: pointer;
-	min-width: 150px;
-	color: var(--emphatext);
-	margin-bottom: 4px;
-}
-
-button#btn1:hover {
+button#btn:hover {
 	background-color: var(--btnhover);
 	border: 1px solid var(--border);
 	border-radius: 4px;
@@ -370,22 +377,11 @@ button#btn1:hover {
 	color: var(--emphatext);
 }
 
-button#btn2:hover {
-	background-color: var(--btnhover);
-	border: 1px solid var(--border);
-	border-radius: 4px;
-	padding: 16px;
-	font-size: 15px;
-	color: var(--emphatext);
-}
-
-button#btn3:hover {
-	background-color: var(--btnhover);
-	border: 1px solid var(--border);
-	border-radius: 4px;
-	padding: 16px;
-	font-size: 15px;
-	color: var(--emphatext);
+.footer {
+	height: 100px;
+	background-color: var(--footercolor);
+	text-align: center;
+	padding: 15px 0 15px 0;
 }
 
 /*
@@ -409,9 +405,10 @@ button#btn3:hover {
 	}
 }
 
-@media (max-width: 356px) {
-	.topnav a {
-		padding: 14px 8px 14px 8px;
+
+@media (max-width: 1060px) {
+	div#adress {
+		text-align: left;
 	}
 }
 

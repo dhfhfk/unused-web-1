@@ -29,68 +29,71 @@
 	<body>
 		<div class="container">
 			<div class="main-content"> 
-				<h2>서버 상태</h2>
-				<article class="component">
-					<div class="description">
-						<h4>#1 | Minecraft</h4>
-						<div id="adress">minecraft.dhfhfk.kro.kr</div>
-						<div id="status1"></div>
-						<div id="rest1"></div>
-						<br>
-						<script>
-							var url = "https://api.minetools.eu/ping/minecraft.dhfhfk.kro.kr/25565";
-							
-							$.getJSON(url, function(r) {
-							if(r.error){
-								$('#status1').html('이 서버는 현재 오프라인이에요.');
-							return false;
-							} 
-							var pl = '';
-							$('#rest1').html(r.version.name+pl);
-							$('#favicon1').attr('src', r.favicon);
-							});
-						</script>
-					</div>
-				</article>
-				<article class="component">
-					<div class="description">
-						<h4>#2 | Minecraft [Test]</h4>
-						<div id="adress">testmc.dhfhfk.kro.kr</div>
-						<div id="status2"></div>
-						<div id="rest2"></div>
-						<br>
-						<script>
-							var url = "https://api.minetools.eu/ping/testmc.dhfhfk.kro.kr/25566";
-							
-							$.getJSON(url, function(r) {
-							if(r.error){
-								$('#status2').html('이 서버는 현재 오프라인이에요.');
-							return false;
-							} 
-							var pl = '';
-							$('#rest2').html(r.version.name+pl);
-							$('#favicon2').attr('src', r.favicon);
-							});
-						</script>
-					</div>
-				</article>
-				<article class="component">
-					<div class="description">
-						<h4>#3 | none</h4>
-						<div id="adress">-</div>
-						<div id="status3">-</div>
-						<div id="rest3"></div>
-						<br>
-					</div>
-				</article>
+			<h2>서버 상태</h2>
+				<div class="status-wrapper">
+					<article class="component">
+						<div class="description">
+							<h4>#1 | Minecraft</h4>
+							<div id="adress">minecraft.dhfhfk.kro.kr</div>
+							<div id="status1"></div>
+							<div id="rest1"></div>
+							<script>
+								var url = "https://api.minetools.eu/ping/minecraft.dhfhfk.kro.kr/25565";
+								
+								$.getJSON(url, function(r) {
+								if(r.error){
+									$('#status1').html('이 서버는 현재 오프라인이에요.');
+								return false;
+								} 
+								var pl = '';
+								$('#rest1').html(r.version.name+pl);
+								$('#favicon1').attr('src', r.favicon);
+								});
+							</script>
+						</div>
+					</article>
+					<article class="component">
+						<div class="description">
+							<h4>#2 | Minecraft [Test]</h4>
+							<div id="adress">testmc.dhfhfk.kro.kr</div>
+							<div id="status2"></div>
+							<div id="rest2"></div>
+							<br>
+							<script>
+								var url = "https://api.minetools.eu/ping/testmc.dhfhfk.kro.kr/25566";
+								
+								$.getJSON(url, function(r) {
+								if(r.error){
+									$('#status2').html('이 서버는 현재 오프라인이에요.');
+								return false;
+								} 
+								var pl = '';
+								$('#rest2').html(r.version.name+pl);
+								$('#favicon2').attr('src', r.favicon);
+								});
+							</script>
+						</div>
+					</article>
+					<article class="component">
+						<div class="description">
+							<h4>#3 | none</h4>
+							<div id="adress">dhfhfk.kro.kr</div>
+							<div id="status3"></div>
+							<div id="rest3"></div>
+							<br>
+						</div>
+					</article>
+				</div>
+			</div>
 				<div class="gobtn">
 					<h2>빠른 이동</h2>
-					<button id="btn1" onClick="window.open('http://map1.dhfhfk.kro.kr')">2D<br>Dynmap</button>
-					<button id="btn2" onClick="window.open('http://map2.dhfhfk.kro.kr')">3D<br>Blue Map</button>
-					<button id="btn3" onClick="window.open('https://mmcrs.in/')">마인크래프트<br>업데이트 소식</button>
+					<div class="btns">
+						<button id="btn" onClick="window.open('http://map1.dhfhfk.kro.kr')">2D<br>Dynmap</button>
+						<button id="btn" onClick="window.open('http://map2.dhfhfk.kro.kr')">3D<br>Blue Map</button>
+						<button id="btn" onClick="window.open('https://mmcrs.in/')">마인크래프트<br>업데이트 소식</button>
+					</div>
 				</div>
-				<section class="notices">
-					<div class="notice">
+				<div class="notices">
 						<h2>사이트관련 공지사항</h2>
 						웹사이트는 아직 제작 중이에요. ( 2021-06-09 ~ 무한 노동중 ) <br>
 					</div>
@@ -112,10 +115,17 @@
 							<li>모바일 반응형웹 개선</li>
 						</ol>
 					</div>
-				</section>
 				</div>
 			</div>
 		</div>
+		<footer>
+			<div class="footer">
+				<blockquote>
+					<a>Copyright 2021. dhfhfk Licensed under </a><a target="_blank" href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0</a><a>.</a>
+					
+				</blockquote>
+			</div>
+		</footer>
 	</body>
 	<script src="main.js"></script> 
 	</div>
