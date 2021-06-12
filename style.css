@@ -143,8 +143,8 @@ body {
 	border: 2px solid;
 }
 
-#toggleTheme:focus{ 	
-    border-radius: 0px;
+#toggleTheme:focus{ 
+    outline:none;
     }
 
 html {
