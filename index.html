@@ -45,7 +45,7 @@
 							return false;
 							} 
 							var pl = '';
-							if(r.players.sample.length > 0 ){ pl = '<br>OP: '+r.players.sample[0].name;  } 
+							if(r.players.sample.length > 0 ){ pl = '<br>'+r.players.sample[0].name;  } 
 							$('#rest1').html(r.description.replace(/§(.+?)/gi, '')+'<br>'+r.version.name+pl);
 							$('#favicon1').attr('src', r.favicon);
 							});
@@ -68,7 +68,7 @@
 							return false;
 							} 
 							var pl = '';
-							if(r.players.sample.length > 0 ){ pl = '<br>OP: '+r.players.sample[0].name;  } 
+							if(r.players.sample.length > 0 ){ pl = '<br>'+r.players.sample[0].name;  } 
 							$('#rest2').html(r.description.replace(/§(.+?)/gi, '')+'<br>'+r.version.name+pl);
 							$('#favicon2').attr('src', r.favicon);
 							});
@@ -97,19 +97,20 @@
 					</div>
 					<div class="new">
 						<h2>새로운 기능!</h2>
-						(2021-06-09) Dynmap이 마인크래프트 서버와 관계 없이 standalone 방식으로 작동해요.<br>
+						(2021-06-09) Dynmap, BlueMap이 마인크래프트 서버와 관계 없이 standalone 방식으로 작동해요.<br>
 						(2021-06-11) localstorage를 이용한 테마 변경이 가능하고 반응형웹을 지원해요. <br>
 						(2021-06-12) BlueMap이 사용가능해요! 3D렌더링된 지도로 자유로움을 느껴보세요!
+						<a target="_blank" href="https://www.spigotmc.org/resources/coreprotect.8631/">사용방법 보러가기</a>
 					</div>
 					<div class="todo">
 						<h2>Todo List</h2>
 						<ol>
-							<li>서버 컴퓨터 핑 보내기</li>
+							<li>서버 컴퓨터 상태 확인</li>
 							<li>다크모드 플래시 현상 개선 (디폴트값을 다크로 변경하여 임시조치 완료)</li>
-							<li>모바일 반응형웹 개선 (나중에 양 사이드 마진좀 추가하면 완벽할듯)</li>
 							<li>HTML 코드 귀찮다고 대충 때운거 개선 (어느정도 개선 완료)</li>
 							<li>서버 핑확인 속도 개선 (MCAPI에서 minetools로 변경함)</li>
-							<li>버튼 디자인이 별로에요</li>
+							<li>버튼 디자인 개선</li>
+							<li>모바일 반응형웹 개선</li>
 						</ol>
 					</div>
 				</section>

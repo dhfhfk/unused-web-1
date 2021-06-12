@@ -45,7 +45,7 @@
 							return false;
 							} 
 							var pl = '';
-							if(r.players.sample.length > 0 ){ pl = '<br>OP: '+r.players.sample[0].name;  } 
+							if(r.players.sample.length > 0 ){ pl = '<br>'+r.players.sample[0].name;  } 
 							$('#rest1').html(r.description.replace(/§(.+?)/gi, '')+'<br>'+r.version.name+pl);
 							$('#favicon1').attr('src', r.favicon);
 							});
@@ -68,7 +68,7 @@
 							return false;
 							} 
 							var pl = '';
-							if(r.players.sample.length > 0 ){ pl = '<br>OP: '+r.players.sample[0].name;  } 
+							if(r.players.sample.length > 0 ){ pl = '<br>'+r.players.sample[0].name;  } 
 							$('#rest2').html(r.description.replace(/§(.+?)/gi, '')+'<br>'+r.version.name+pl);
 							$('#favicon2').attr('src', r.favicon);
 							});
