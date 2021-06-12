@@ -38,8 +38,8 @@ html {
 	--border: #ffffff;
 	--online: #6eff4a;
 	--fixedtop: #a14d4d;
-	--selcolor: #f1f1f1;
-	--btnhover: #469251;
+	--selcolor: #bbbbbb
+	--btnhover: #bbbbbb;
 }
 
 ::-moz-selection {
