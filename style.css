@@ -168,9 +168,10 @@ h2 {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1210px;
 	margin: 0 auto;
 	padding-top: 40px;
+	padding: 40px 10px 0 10px;
 }
 
 .container h2 {
