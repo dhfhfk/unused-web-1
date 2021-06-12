@@ -83,20 +83,6 @@
 						<div id="status3">-</div>
 						<div id="rest3"></div>
 						<br>
-						<script>
-							var url = "https://api.minetools.eu/ping/";
-							
-							$.getJSON(url, function(r) {
-							if(r.error){
-								$('#status3').html('이 서버는 현재 오프라인이에요.');
-							return false;
-							} 
-							var pl = '';
-							if(r.players.sample.length > 0 ){ pl = '<br>OP: '+r.players.sample[0].name;  } 
-							$('#rest3').html(r.description.replace(/§(.+?)/gi, '')+'<br>'+r.version.name+pl);
-							$('#favicon3').attr('src', r.favicon);
-							});
-						</script>
 					</div>
 				</article>
 				<div class="gobtn">
