@@ -144,8 +144,7 @@ body {
 }
 
 #toggleTheme:focus{ 	
-    border: none;
-    outline:none;
+    border-radius: 0px;
     }
 
 html {
