@@ -379,6 +379,7 @@ button#btn:hover {
 
 .footer {
 	height: 100px;
+	width: 100%;
 	background-color: var(--footercolor);
 	text-align: center;
 	padding: 15px 0 15px 0;
