@@ -303,9 +303,28 @@ hr {
 }
 
 .notices {
+	display: flex;
 	margin-bottom: 48px;
 	line-height: 160%;
 	width: 100%;
+	flex-wrap: wrap;
+}
+
+.notices .notice-site {
+	width: 45%;
+	flex: 30%;
+	margin: 0 10px 48px 0;
+	min-width: 200px;
+}
+
+.notices .notice-mcserver {
+	width: 45%;
+	flex: 30%;
+	min-width: 225px;
+}
+
+.notices h2 {
+	width: 100%
 }
 
 .notice {
@@ -317,6 +336,24 @@ hr {
 	color: var(--emphatext);
 }
 
+details[open] summary ~ * {
+	animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+	0%    {opacity: 0; margin-left: -10px}
+	100%  {opacity: 1; margin-left: 0px}
+}
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-1.25em);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 .new {
 	line-height: 160%;

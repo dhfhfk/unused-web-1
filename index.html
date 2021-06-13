@@ -22,7 +22,6 @@
 			<div class="navbtns">
 				<a href="index.html">홈</a>
 				<a href="info.html">서버 정보</a>
-				<a href="mcinfo.html">마크서버 정보</a>
 			</div>
 			<button id="toggleTheme"></button>
 		</div>
@@ -86,36 +85,92 @@
 					</article>
 				</div>
 			</div>
-				<div class="gobtn">
-					<h2>빠른 이동</h2>
-					<div class="btns">
-						<button id="btn" onClick="window.open('http://map1.dhfhfk.kro.kr')">2D<br>Dynmap</button>
-						<button id="btn" onClick="window.open('http://map2.dhfhfk.kro.kr')">3D<br>Blue Map</button>
-						<button id="btn" onClick="window.open('https://mmcrs.in/')">마인크래프트<br>업데이트 소식</button>
-					</div>
+			<div class="gobtn">
+				<h2>빠른 이동</h2>
+				<div class="btns">
+					<button id="btn" onClick="window.open('http://map1.dhfhfk.kro.kr')">2D<br>Dynmap</button>
+					<button id="btn" onClick="window.open('http://map2.dhfhfk.kro.kr')">3D<br>Blue Map</button>
+					<button id="btn" onClick="window.open('https://mmcrs.in/')">마인크래프트<br>업데이트 소식</button>
 				</div>
-				<div class="notices">
-						<h2>사이트관련 공지사항</h2>
-						웹사이트는 아직 제작 중이에요. ( 2021-06-09 ~ 무한 노동중 ) <br>
-					</div>
-					<div class="new">
-						<h2>새로운 기능!</h2>
-						(2021-06-09) Dynmap, BlueMap이 마인크래프트 서버와 관계 없이 standalone 방식으로 작동해요.<br>
-						(2021-06-11) localstorage를 이용한 테마 변경이 가능하고 반응형웹을 지원해요. <br>
-						(2021-06-12) BlueMap이 사용가능해요! 3D렌더링된 지도로 자유로움을 느껴보세요!
-					</div>
-					<div class="todo">
-						<h2>Todo List</h2>
-						<ol>
-							<li>서버 컴퓨터 상태 확인</li>
-							<li>다크모드 플래시 현상 개선 (디폴트값을 다크로 변경하여 임시조치 완료)</li>
-							<li>HTML 코드 귀찮다고 대충 때운거 개선 (어느정도 개선 완료)</li>
-							<li>서버 핑확인 속도 개선 (MCAPI에서 minetools로 변경함)</li>
-							<li>버튼 디자인 개선</li>
-							<li>모바일 반응형웹 개선</li>
-						</ol>
-					</div>
+			</div>
+			<div class="notices">
+				<div class="notice-site" style="float: left;">
+					<h2>사이트관련 공지사항</h2>
+					웹사이트는 아직 제작 중이에요. ( 2021-06-09 ~ ) <br>
 				</div>
+				<div class="notice-mcserver"style="float: right;">
+					<h2>서버관련 공지사항</h2>
+					테스트서버는 새로운 플러그인이나 새로운 마인크래프트 버전을 먼저 테스트해보기 위한 서버에요. <br>
+					BlueMap이 사용가능합니다! 3D렌더링된 지도로 자유로움을 느껴보세요! <br>
+					2021-06-21 ~ 2021-07-02 까지는 기말고사로 인해 서버를 열지 않아요.
+				</div>
+			</div>
+			<div class="new">
+				<h2>새로운 기능!</h2>
+				(2021-06-09) Dynmap, BlueMap이 마인크래프트 서버와 관계 없이 standalone 방식으로 작동해요.<br>
+				(2021-06-11) localstorage를 이용한 테마 변경이 가능하고 반응형웹을 지원해요. <br>
+				(2021-06-12) BlueMap이 사용가능해요! 3D렌더링된 지도로 자유로움을 느껴보세요!
+			</div>
+			<div class="plugins">
+				<h2>사용중인 플러그인</h2>
+				<details>
+					<summary> 플러그인 목록</summary>
+					<ul>
+						<li>
+							<a target="_blank" href="https://www.spigotmc.org/resources/coreprotect.8631/">CoreProtect</a><a> | 로그 추적, 복구</a>
+							</li>
+						<li>
+							<a target="_blank" href="https://github.com/DiscordSRV/DiscordSRV/releases">DiscordSRV</a><a> | 채팅, 콘솔을 디스코드와 연결</a>
+							</li>
+						<li>
+							<a target="_blank" href="https://www.reddit.com/r/Dynmap/">Dynmap</a><a> | 2D 렌더링 웹 지도</a>
+							</li>
+						<li>
+							<a target="_blank" href="https://www.spigotmc.org/resources/harbor-a-sleep-enhancement-plugin.60088/">Harbor</a><a> | 침대 스킵</a>
+							</li>
+						<li>
+							<a target="_blank" href="https://www.spigotmc.org/resources/interactivechat-show-items-inventory-in-chat-custom-chat-keywords-bungee-velocity-support.75870/">InteractiveChat</a><a> | 마인크래프트 내에서 이미지 프리뷰</a>
+							</li>
+						<li>
+							<a target="_blank" href="https://dev.bukkit.org/projects/join-message-plus">JoinMessagePlus</a><a> | 입퇴장 메세지 간략화</a>
+							</li>
+						<li>
+							<a target="_blank" href="https://github.com/PlaceholderAPI/PlaceholderAPI/releases">PlaceholderAPI</a><a> | 여러플러그인 확장성</a>
+							</li>
+						<li>
+							<a target="_blank" href="https://github.com/dmulloy2/ProtocolLib/releases/tag/4.6.0">ProtocolLib</a><a> | InteracriveChat 의존성</a>
+							</li>
+						<li>
+							<a target="_blank" href="https://www.spigotmc.org/resources/quick-save-auto-world-backups.75871/">QuickSave</a><a> | 백업툴</a>
+							</li>
+						<li>
+							<a target="_blank" href="https://github.com/SkriptLang/Skript/releases">Skript</a><a> | 간단히 사용하는 스크립트</a>
+							</li>	
+						<li>
+							<a target="_blank" href="https://github.com/MilkBowl/Vault/releases">Vault</a><a> | InteracriveChat 의존성</a>
+							</li>
+						<li>
+							<a target="_blank" href="https://dev.bukkit.org/projects/worldedit">worldedit</a><a> | 월드에딧</a>
+							</li>
+						<li>
+							<a target="_blank" href="https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases">worldeditselectionvisualizer</a><a> | 월드에딧 시각화</a>
+							</li>	
+						<li>
+							<a target="_blank" href="https://github.com/BlueMap-Minecraft/BlueMap/releases">BlueMap</a><a> | 3D 렌더링 웹 지도</a>
+							</li>
+					</ul>
+				</details>
+			</div>
+			<div class="recommend">
+				<h2>권고사항</h2>
+				<h4>굉장히 기본적인 권고사항이에요.</h4>
+				<ul>
+					<li>클라이언트 사이드 모드 (Client side only mod)만 사용하세요! (대부분 모드 페이지에 적혀있습니다.)<br>서버 사이드 모드 (Server side only mod)를 사용하면 대부분 작동하지 않습니다.</li>
+					<li>
+						<a target="_blank" href="https://youtu.be/cUv2894RDd4?t=13"
+							title="특정 블럭을 지정하면 주변 최적의 경로를 탐색후 채집하는 자동화 툴">impact, baritone같은 Automated 봇</a><a>을 사용하는 것은 제재하지 않지만, 재미를 위해서 지양해주세요. 밸런스붕괴, 조기종료의 원인이 됩니다.<br>
+							물론 X-Ray 또한 마찬가지입니다.</a></li>
+				</ul>
 			</div>
 		</div>
 		<footer>
