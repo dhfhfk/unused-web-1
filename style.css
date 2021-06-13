@@ -23,6 +23,7 @@ html.light {
 	--fixedtop: #ff7272;
 	--selcolor: #1a1a1a;
 	--btnhover: #64ce72;
+	--themeicon: url(images/lightmode.png);
 }
 
 html {
@@ -40,6 +41,7 @@ html {
 	--fixedtop: #a14d4d;
 	--selcolor: #1a1a1a;
 	--btnhover: #469251;
+	--themeicon: url(images/darkmode.png);
 }
 
 ::-moz-selection {
@@ -78,6 +80,8 @@ html {
 .topnav {
 	background-color: var(--topnavbackground);
 	overflow: hidden;
+	min-height: 40px;
+
 }
 
 .topnav a {
@@ -85,9 +89,11 @@ html {
 	display: block;
 	color: var(--text);
 	text-align: center;
-	padding: 14px 15px;
+	padding: 14px 2.5vw;
 	text-decoration: none;
 	font-size: 17px;
+	line-height: 50%;
+	min-height: 40px;
 }
 
 .topnav .icon {
@@ -129,6 +135,10 @@ html {
 	text-align: left;
 }
 
+.navbtns {
+	margin-left: 5px;
+}
+
 body {
 	background-color: var(--background);
 }
@@ -137,12 +147,16 @@ body {
 	float: right;
 	justify-content: center;
 	text-align: center;
-	height: 50px;
-	width: 50px;
-	margin: 0 auto;
+	height: 40px;
+	width: 40px;
 	display: block;
 	background: transparent;
+	background-image: var(--themeicon);
 	border: 2px solid;
+	background-size: cover;
+	background-origin: content-box;
+	padding: 5px;
+	background-repeat: no-repeat;
 }
 
 #toggleTheme:focus{ 
