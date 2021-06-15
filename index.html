@@ -35,6 +35,7 @@
 							<div id="adress">minecraft.dhfhfk.kro.kr</div>
 							<div id="status1"></div>
 							<div id="rest1"></div>
+							<br>
 							<script>
 								var url = "https://api.minetools.eu/ping/minecraft.dhfhfk.kro.kr/25565";
 								
@@ -44,7 +45,7 @@
 								return false;
 								} 
 								var pl = '';
-								$('#rest1').html(r.version.name+pl);
+								$('#rest1').html('접속 버전: '+r.version.name+pl);
 								});
 							</script>
 						</div>
@@ -65,20 +66,19 @@
 								return false;
 								} 
 								var pl = '';
-								$('#rest2').html(r.version.name+pl);
+								$('#rest2').html('접속 버전: '+r.version.name+pl);
 								});
 							</script>
 						</div>
 					</article>
 					<article class="component">
 						<div class="description">
-							<h4>#3 | none</h4>
-							<div id="adress">dhfhfk.kro.kr</div>
+							<h4>#3 | 웹 지도</h4>
+							<div id="adress">map1, map2</div>
 							<div id="status3"></div>
 								<ul data-bind="foreach:servers">
 									<a href="#" style="text-decoration:none" data-bind="text:name,attr:{href: 'http://'+name}">tester</a> <span data-bind="text:status,css:status"></span>
 								</ul>
-							<div id="rest3"></div>
 							<br>
 						</div>
 					</article>
