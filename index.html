@@ -75,6 +75,9 @@
 							<h4>#3 | none</h4>
 							<div id="adress">dhfhfk.kro.kr</div>
 							<div id="status3"></div>
+								<ul data-bind="foreach:servers">
+									<a href="#" style="text-decoration:none" data-bind="text:name,attr:{href: 'http://'+name}">tester</a> <span data-bind="text:status,css:status"></span>
+								</ul>
 							<div id="rest3"></div>
 							<br>
 						</div>

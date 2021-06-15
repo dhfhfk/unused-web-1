@@ -49,7 +49,7 @@ html {
 	--hrcolor: #4b4b4b;
 	--border: #ffffff;
 	--online: #6eff4a;
-	--fixedtop: #a14d4d;
+	--fixedtop: #b35252;
 	--selcolor: #1a1a1a;
 	--btnhover: #469251;
 	--themeicon: url(images/darkmode.png);
@@ -262,16 +262,8 @@ img {
 	
 }
 
-.server-status1 {
-	text-align: right;
-}
-
-.server-status2 {
-	text-align: right;
-}
-
-.server-status3 {
-	text-align: right;
+.status3 {
+	line-height: 160%;
 }
 
 .status .description1 {
@@ -295,11 +287,22 @@ div#adress {
 	text-align: left;
 	padding-bottom: 5px;
 	margin-bottom: 5px;
+}
 
+.접속.가능 {
+	color:green;
+	font-weight: 700;
+}
+.확인중,.unchecked {
+	color:#FF8C00;
+}
+.오프라인 {
+	color:rgb(156, 0, 0);
+	font-weight: 700;
 }
 
 hr {
-	margin-top: 7px;
+	margin-top: 7px; 
 	margin-bottom: 7px;
 	color: var(--hrcolor);
 }
