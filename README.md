@@ -13,7 +13,7 @@
 - [minetools api](api.minetools.eu)
 - [knockout](https://github.com/knockout/knockout)
 - [ping.js](https://github.com/alfg/ping.js/)
-- [jQuery]
+- [jQuery](https://github.com/jquery/jquery)
 
 ## License
 
