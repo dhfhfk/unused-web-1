@@ -324,6 +324,12 @@ hr {
 	min-width: 200px;
 }
 
+.notices .notice-site a {
+	text-decoration: none;
+	border-bottom: 1px dashed var(--text);
+	border-radius: 2px
+}
+
 .notices .notice-mcserver {
 	width: 45%;
 	flex: 30%;
