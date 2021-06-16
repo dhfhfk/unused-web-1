@@ -43,7 +43,7 @@ function ping(ip, callback) {
 
       };
       this.start = new Date().getTime();
-      this.img.src = "http://" + ip;
+      this.img.src = "https://" + ip;
       this.timer = setTimeout(function () {
           if (_that.inUse) {
               _that.inUse = false;
