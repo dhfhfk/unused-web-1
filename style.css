@@ -34,7 +34,7 @@ html.light {
 	--fixedtop: #ff7272;
 	--selcolor: #1a1a1a;
 	--btnhover: #64ce72;
-	--themeicon: url(images/lightmode.png);
+	--themeicon: '\e801';
 }
 
 html {
@@ -52,7 +52,7 @@ html {
 	--fixedtop: #b35252;
 	--selcolor: #1a1a1a;
 	--btnhover: #469251;
-	--themeicon: url(images/darkmode.png);
+	--themeicon: '\e800';
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -163,13 +163,15 @@ html {
 	width: 50px;
 	display: block;
 	background: transparent;
-	background-image: var(--themeicon);
 	border: 0px solid;
-	background-size: cover;
-	background-origin: content-box;
 	padding: 15px;
-	background-repeat: no-repeat;
 	margin-right: 5px;
+}
+
+#toggleTheme:before {
+	content: var(--themeicon);
+	font-family: fontello;
+	font-size: 20px;
 }
 
 #toggleTheme:hover {
